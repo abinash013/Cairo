@@ -1,0 +1,49 @@
+#myid{
+  background-color: #00004d !important;
+}
+
+#mainnav{
+  visibility: hidden !important;
+}
+#mylist li{
+  display:inline-block;
+  list-style-type:none;
+  padding:3px 20px 3px 20px;
+}
+#mylist li a{
+  text-decoration: none;
+  color:white;
+}
+
+#lowernav{
+  text-align:center;
+  background-color:#000066;
+}
+
+
+
+#searchbar{
+  max-width:700px;
+}
+
+@media only screen and (max-width: 600px){
+  #mylist{
+    display:none;
+  }
+}
+@media only screen and (max-width: 990px) {
+
+  #mainnav{
+    visibility:visible !important;
+  }
+
+}
+
+@media only screen and (max-width:1280px){
+
+  #searchbar{
+    width: 300px !important;
+    margin-right:10px;
+  }
+
+}
