@@ -1,5 +1,6 @@
-#myid{
+#myid,#outfooter{
   background-color: #00004d !important;
+  color:white;
 }
 
 #mainnav{
@@ -15,9 +16,10 @@
   color:white;
 }
 
-#lowernav{
+#lowernav,#infooter{
   text-align:center;
   background-color:#000066;
+  color:white;
 }
 
 
@@ -46,4 +48,11 @@
     margin-right:10px;
   }
 
+}
+
+#footericon{
+  text-align:center;
+}
+#footericon a{
+  display:inline-block;
 }
