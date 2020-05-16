@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if dept %}
+
+<ul>
+{% for d in dept.item_set.all %}
+<li><a href="#">{{ d.item_name }}</a></li>
+   <h5>Price: </h5>{{d.price}}</br>
+   <h5>Date Added: </h5>{{d.date_added}}</br>
+{% endfor %}
+
+
+
+</ul>
+
+
+
+
+{% else %}
+
+<h1> No items Found </h1>
+
+{% endif %}
+
+{% endblock %}
