@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CAIRO</title>
+    {% block links %}
+    {% endblock %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -52,19 +54,19 @@
 
     <ul class="px-2" id="mylist">
       <li >
-        <a href="#">Home </a>
+        <a href="{% url 'shop:homepage' %}">HOME </a>
       </li>
       <li >
-        <a href="{% url 'shop:index' dname='mobiles' %}">Mobiles</a>
+        <a href="{% url 'shop:index' dname='mobiles' %}">MOBILES</a>
       </li>
       <li >
-        <a href="#">Link</a>
+        <a href="{% url 'shop:index' dname='laptops' %}">LAPTOPS</a>
       </li>
       <li >
-        <a href="#">Link</a>
+        <a href="{% url 'shop:index' dname='fashion' %}">FASHION</a>
       </li>
       <li>
-        <a href="#">Disabled</a>
+        <a href="{% url 'shop:index' dname='books' %}">BOOKS</a>
       </li>
     </ul>
   </div>
@@ -78,13 +80,7 @@
 
 {% endblock %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia varius posuere. Sed pretium nisi nec varius faucibus. Aliquam tristique porta finibus. Vivamus ullamcorper orci ut placerat interdum. Pellentesque mattis vehicula condimentum. Maecenas scelerisque neque mattis ante blandit, in condimentum lectus convallis. Aenean venenatis nunc sit amet quam ultricies, id malesuada ipsum tincidunt. Nullam consectetur dui sit amet magna imperdiet, sit amet iaculis nulla pellentesque.
 
-Morbi sed nisi eu purus blandit rutrum id et magna. Proin aliquam libero ac mauris volutpat ultricies. Nam sem justo, hendrerit et ultricies eu, condimentum at est. Fusce fringilla accumsan ligula. Sed vel metus feugiat, rutrum nunc vehicula, ultrices nibh. Sed a ipsum placerat, scelerisque turpis euismod, rutrum arcu. Proin sit amet ante vel nibh suscipit tincidunt sit amet ac enim.
-
-Mauris turpis sem, tincidunt at sollicitudin in, finibus non urna. Ut mauris sapien, porttitor eget eros eget, fermentum luctus tellus. Curabitur bibendum et velit ut commodo. Donec ut volutpat ipsum, non tincidunt erat. Aliquam erat volutpat. Suspendisse eros quam, elementum sed vehicula nec, mollis non orci. Donec elementum mattis commodo. In tincidunt, magna sed ullamcorper mollis, dolor est rutrum ante, eget tincidunt risus nibh ac ipsum. Etiam eleifend, orci non faucibus dictum, urna quam posuere nibh, a fermentum mauris nisl ut nibh. Pellentesque posuere viverra mi, ac ultrices nibh fringilla id. Mauris quis elit lacus. Vestibulum mauris purus, volutpat id magna in, aliquet pellentesque est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam elementum sit amet enim et tristique. Quisque maximus venenatis enim sit amet laoreet. Vestibulum vel mauris libero.
-
-Suspendisse ac ante eget neque ultricies cursus. Donec posuere euismod mi, id fringilla dolor accumsan quis. Pellentesque aliquam, est quis venenatis tempus, libero quam mattis felis, sit amet porta diam nunc sed diam. In at nibh eu purus convallis aliquam a nec quam. Donec eget erat ac justo congue imperdiet a et ante. Nulla imperdiet rhoncus leo et interdum. Sed id purus volutpat, efficitur urna at, fermentum lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis eges
 
 <!-- Footer -->
 <footer id="outfooter" class="page-footer font-small pt-4">
