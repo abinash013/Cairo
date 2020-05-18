@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import department,item
+from .models import department, item
 
 # Create your views here.
 def home(request):
@@ -7,7 +7,10 @@ def home(request):
 
 def index(request,dname):
     try:
-        dept=department.objects.get(department_name=dname)
+        dept = department.objects.get(department_name=dname)
     except department.DoesNotExist:
-        dept=None
+        dept = None
     return render(request,"shop/index.html",{'dept':dept})
+
+def signin(request):
+    return render(request, 'shop/signin.html', context=None)
