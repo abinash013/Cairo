@@ -7,7 +7,7 @@ body{
 
 
 .box{
-  width:300px;
+  width:400px;
   padding:40px;
   margin: auto ;
   margin-top:0px;
@@ -43,9 +43,9 @@ transition:width 0.25s ease;
 -o-transition: 0.25s;
 }
 
-.box input[type="text"]:foccus,.box input[type="password"]:focus,.box input[type="email"]:focus,.box input[type="number"]:focus{
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="email"]:focus,.box input[type="number"]:focus{
 
-        width:280px !important;
+        width:280px;
         border-color:#2ecc71;
  }
 
