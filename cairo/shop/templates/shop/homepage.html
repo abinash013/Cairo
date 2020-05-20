@@ -2,6 +2,14 @@
 
 {% block content %}
 
+{% if error_message %}
+
+<script>
+  alert("Invalid email or password");
+</script>
+
+
+{% endif %}
 
 <h1> Hello world </h1>
 

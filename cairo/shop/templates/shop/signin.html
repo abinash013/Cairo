@@ -5,6 +5,12 @@
 {% endblock %}
 
 {% block content %}
+{% if error_message %}
+<script>
+alert("Email Id already exists!")
+</script>
+{% endif %}
+
 
 <div class="outerbox">
 <form class="box" action="{% url 'shop:signinprocess' %}" method="post">
