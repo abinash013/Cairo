@@ -17,10 +17,14 @@ def signin(request):
 
 def siginprocess(request):
     if (request.method=="POST"):
-        currentform=signinform(request.POST)
+        currentform = signinform(request.POST)
         if currentform.is_valid():
             currentform.save()
-            return render(request,'shop/homepage.html',context=None)
+            return render(request, 'shop/homepage.html', context=None)
     else:
-        form=signinform()
-    return render(request,'shop/signin.html',context=None)
+        currentform = signinform()
+    return render(request, 'shop/signin.html', {'currentform':currentform})
+
+
+def login(request):
+    return render(request,'shop/homepage.html')

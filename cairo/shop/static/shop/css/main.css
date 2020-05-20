@@ -1,16 +1,113 @@
 #myid,#outfooter{
-  background-color: #00004d !important;
-  color:white;
+  background-color: #0099cc;
+  color:white !important;
 }
 
 #mainnav{
   visibility: hidden !important;
 }
+
+#loginbtn{
+  background: inherit;
+  border:none;
+  color:inherit;
+}
+.popupdiv{
+  position:fixed;
+  display:none;
+border: 3px solid #f1f1f1;
+  top:8%;
+  left:80px;
+  z-index:9;
+
+  background: white;
+}
+
+.popupform{
+  max-width:300px;
+  text-transform: uppercase;
+
+    margin: 2px 5px 5px 5px;
+
+}
+#popuphead{
+  position:relative;
+}
+#xbtn{
+  position:absolute;
+  top:0;
+  right:0;
+  background: red;
+  border:none;
+  opacity:0.78;
+}
+
+.labellog{
+  font-weight:600;
+  letter-spacing: 1px;
+}
+.popupform input[type="email"],.popupform input[type="password"]{
+  display:block;
+  padding:5px;
+  border:none;
+    width:100%;
+  margin:5px 15px 15px 0px;
+
+  background-color: #f1f1f1;
+
+}
+
+.popupform input[type="email"]:focus,.popupform input[eype="password"]:focus{
+  box-shadow:2px 2px 2px 0px black;
+  background-color:#ddd;
+}
+
+.btnlogin{
+  width:100%;
+  cursor:pointer;
+  background: green;
+  border:none;
+  text-align:center;
+  padding:5px;
+  margin-bottom:10px;
+  opacity:0.8;
+  color:white;
+}
+
+.btnlogin:hover{
+opacity:1;
+}
+
+
+
+
+
+
+
+
+
+#mylist{
+  padding:0.25rem;
+}
 #mylist li{
   display:inline-block;
   list-style-type:none;
   padding:3px 20px 3px 20px;
+  position:relative;
 }
+#mylist li::before{
+  content:'';
+  position:absolute;
+  top:10%;
+  bottom:80%;
+  width:0%;
+  background:white;
+  transition:1s ease;
+}
+#mylist li:hover::before{
+  width:60%;
+}
+
 #mylist li a{
   text-decoration: none;
   color:white;
@@ -18,10 +115,17 @@
 
 #lowernav,#infooter{
   text-align:center;
-  background-color:#000066;
+  background-color:#00ace6 !important;
   color:white;
 }
 
+li>a{
+  color:white;
+
+}
+li>a:hover{
+  text-decoration:none;
+}
 
 
 #searchbar{
